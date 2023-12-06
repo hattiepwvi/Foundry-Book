@@ -78,7 +78,3 @@ contract Basic4626Deposit {
         assets_ = IERC20Like(asset).balanceOf(address(this));
     }
 }
-
-contract Basic4626DepositTest is Test {
-    Basic4626Deposit basic4626Deposit;
-}

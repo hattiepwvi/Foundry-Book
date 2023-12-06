@@ -2,8 +2,9 @@
 pragma solidity 0.8.21;
 
 import "forge-std/Test.sol";
+import {ERC20} from "solmate/tokens/ERC20.sol";
 
-contract Mytoken is ERC20 {
+contract MyToken is ERC20 {
     constructor(
         string memory name,
         string memory symbol,
