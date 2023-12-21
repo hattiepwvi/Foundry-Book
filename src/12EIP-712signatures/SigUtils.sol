@@ -2,7 +2,7 @@
 pragma solidity ^0.8.13;
 
 // struct selector => struct calldata => (+1901 + DOMAIN_SEPARATOR)generate & verify signatures 或 typed data hash. => ecrecover(signature, v,r,s)
-contract SignUtils {
+contract SigUtils {
     bytes32 internal DOMAIN_SEPARATOR;
 
     constructor(bytes32 _DOMAIN_SEPARATOR) {
